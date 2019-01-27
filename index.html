@@ -10,6 +10,7 @@
           <div class="container">
             <a class="header-logo">Техномарт</a>
             <!--Search form-->
+            <!-- тут форму можно сразу поставить. тег form и внутри input -->
             <a class="header-bookmarks" href="#">Закладки: 0</a>
             <a class="header-cart" href="#">Корзина: 0</a>
             <a class="header-order" href="#">Оформить заказ</a>
@@ -21,6 +22,7 @@
               <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
               <div class="header-contacts">
                 <p class="header-phone">+7 (812) 555-05-55</p>
+                <!-- телефон лучше вставлять ссылкой https://html5.by/blog/href-tel-mobile-browser/ -->
                 <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
               <div class="header-not-authorized">
@@ -48,11 +50,13 @@
       <!--Не включено в задание-->
 
       <div class="container">
+        <!-- дай тут общего родителя для колонок наших -->
         <section class="about-company">
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями: </p>
+          <!-- BR выше убери. мы потом ограничим через ccs ширину текста -->
           <ul class="partners">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -62,21 +66,24 @@
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, 
+          <p>Вы можете забрать товар сами, <!-- Вот тут можешь br поставить -->
           заехав в наш офис:</p>
           <a class="map" href="">
             <img src="http://placehold.it/150x100" width="300" height="158" alt="Переход на сервис карт">
           </a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
+        <!-- конец общего родителя -->
       </div>
     </main>
 
     <footer class="main-footer">
       <div class="container">
         <div class="footer-top">
+          <!-- лучше сделать 2 колонки внутри fooer-top. в первой контакты, во второй навигация -->
           <a class="footer-logo">Техномарт</a>
           <ul class="footer-top-navigation">
+            <!-- внутри li должны же быть ссылки -->
             <li>Компания</li>
             <li>Новости</li>
             <li>Каталог</li>
@@ -86,8 +93,10 @@
         </div>
         <div class="footer-middle">
           <p footer-contacts>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <!-- телефон ссылкой -->  
           +7 (812) 555-05-55</p>
           <ul class="footer-middle-navigation">
+            <!-- Внутри li ссылки должны быть -->
             <li>Материалы</li>
             <li>Техника</li>
             <li>Инструмент</li>
@@ -115,7 +124,8 @@
         </div>
       </div>
     </footer>
-
+    
+    <!-- этот p убери -->
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
