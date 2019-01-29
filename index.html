@@ -18,7 +18,7 @@
           </div>
         </div>
 
-        <div class="container ">
+        <div class="container">
           <div class="header-middle">
               <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
               <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -47,11 +47,177 @@
     </header>
 
     <main>
-
-      <!--Не включено в задание-->
-
-      <div class="container">
-        <div class="about-company-contacts">
+      <section class="offers">
+        <div class="container">
+          <h2 class="visually-hidden">Предлагаемые товары и услуги</h2>
+          <div class="offers-block">
+            <div class="offers-items-group">
+              <div class="offers-item">
+                <h3>Материалы</h3>
+                <a class="button-offers" href="#">На любой вкус</a>
+              </div>
+              <div class="offers-item">
+                <h3>Инструмент</h3>
+                <a class="button-offers" href="#">На все случаи</a>
+              </div>
+            </div>
+            <div class="slider">
+              <input type="radio" id="slide-1" name="slide-1" checked>
+              <input type="radio" id="slide-2" name="slide-2">
+              <!-- Абсолютно спозиционированные элементы -->
+              <label class="slider-left-arrow" for="slide-1"></label>
+              <label class="slider-right-arrow" for="slide-2"></label>
+              <label class="slider-btn" for="slide-1"></label>
+              <label class="slider-btn" for="slide-2"></label>
+              <!--/Абсолютно спозиционированные элементы -->
+              <div class="slider-1">
+                <h3>Дрели</h3>
+                <p>Соседям на радость</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </div>
+              <div class="slider-2">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button" href="#">Открыть каталог</a>
+              </div>
+            </div>
+            <div class="offers-item">
+              <h3>Техника</h3>
+              <a class="button-offers" href="#">Для стройки</a>
+            </div>
+            <div class="offers-item">
+              <h3>Скидки 50%</h3>
+              <a class="button-offers" href="#">На 350 товаров</a>
+            </div>
+            <div class="offers-item">
+              <h3>Доставка</h3>
+              <a class="button-offers" href="#">Бесплатно</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-products">
+        <div class="container">
+          <div class="popular-header">
+            <h2>Популярные товары:</h2>
+            <a class="button" href="#">Все популярные товары</a>
+          </div>
+          <ul class="popular-products-list">
+            <li class="catalog-item">
+                <h3>Перфоратор BOSCH BFG 9000</h3>
+                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+                <p class="catalog-old-price">32500 Р.</p>
+                <a class="button-catalog" href="#">25500 Р.</a>
+                <ul class="catalog-item-navigation">
+                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-item">
+                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                <p class="catalog-old-price">22500 Р.</p>
+                <a class="button-catalog" href="#">15500 Р.</a>
+                <ul class="catalog-item-navigation">
+                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-item">
+                <h3>Перфоратор BOSCH BFG 6000</h3>
+                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                <p class="catalog-old-price">30500 Р.</p>
+                <a class="button-catalog" href="#">25500 Р.</a>
+                <ul class="catalog-item-navigation">
+                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                </ul>
+              </li>
+              <li class="catalog-item">
+                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+                <p class="catalog-old-price"></p>
+                <a class="button-catalog" href="#">12500 Р.</a>
+                <ul class="catalog-item-navigation">
+                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popular-brands">
+        <div class="container">
+          <div class="popular-header">
+            <h2>Популярные производители</h2>
+            <a class="button" href="#">Все производители:</a>
+            <ul class="popular-brands-list">
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Bosch"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Makita"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="DeWalt"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Интерскол"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Hitachi"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="LG"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="AEG"></a>
+              </li>
+              <li>
+                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Metabo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services-block">
+              <input type="checkbox" id="delivery" checked>
+              <input type="checkbox" id="warranty">
+              <input type="checkbox" id="credit">
+              <ul class="services-list">
+                <label for="delivery"></label>
+                <label for="warranty"></label>
+                <label for="credit"></label>
+              </ul>
+            <div class="service-description service-description-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо 
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,<br> 
+              поднимая его на ваш этаж!</p>
+            </div>
+            <div class="service-description service-description-warranty">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="service-description service-description-credit">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! 
+              Кредитные консультанты придут вам на помощь.</p>
+              <a class="button" href="#">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="about-company-contacts">
+        <div class="container">
           <section class="about-company">
             <h2>Компания «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
