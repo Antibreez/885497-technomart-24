@@ -72,6 +72,7 @@
               <p><span>0</span>-<span>30000</span></p>
             </div>
             <div class="filters-brands">
+              <h3>Прозводители:</h3>
               <input type="checkbox" name="bosch" id="bosch">
               <input type="checkbox" name="interskol" id="interskol">
               <input type="checkbox" name="makita" id="makita">
@@ -86,10 +87,13 @@
               </ul>
             </div>
             <div class="filters-power">
+              <h3>Питание:</h3>
               <input type="checkbox" name="battery" id="battery">
               <input type="checkbox" name="wired" id="wired">
+              <ul class="filters-power-items">
                 <li><label for="battery">Аккумуляторные</label></li>
                 <li><label for="wired">Сетевые</label></li>
+              </ul>
             </div>
             <input type="submit" value="Показать">
           </form>
@@ -98,14 +102,16 @@
           <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="sorting">
             <h3>Сортировка:</h3>
-            <p class="sorting-active">По цене</p>
-            <p>По типу</p>
-            <p>По функционалу</p>
+            <a class="sorting-price sorting-active" href="#">По цене</a>
+            <a class="sorting-type">По типу</a>
+            <a class="sorting-functions">По функционалу</a>
+            <a class="sorting-increase" href="#"></a>
+            <a class="sorting-decrease" href="#"></a>
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img class="catalog-item-image" src="img/bosch-bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <p class="catalog-old-price">22500 Р.</p>
               <a class="button-catalog" href="#">15500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -115,7 +121,7 @@
             </li>
             <li class="catalog-item">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img class="catalog-item-image" src="img/bosch-bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <p class="catalog-old-price">30500 Р.</p>
               <a class="button-catalog" href="#">25500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -125,7 +131,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 2000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img class="catalog-item-image" src="img/bosch-bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <p class="catalog-old-price"></p>
               <a class="button-catalog" href="#">12500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -135,7 +141,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img class="catalog-item-image" src="img/bosch-bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <p class="catalog-old-price">22500 Р.</p>
               <a class="button-catalog" href="#">15500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -145,7 +151,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img class="catalog-item-image" src="img/bosch-bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <p class="catalog-old-price">30500 Р.</p>
               <a class="button-catalog" href="#">25500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -155,7 +161,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 2000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img class="catalog-item-image" src="img/bosch-bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <p class="catalog-old-price"></p>
               <a class="button-catalog" href="#">12500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -165,7 +171,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img class="catalog-item-image" src="img/bosch-bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <p class="catalog-old-price">22500 Р.</p>
               <a class="button-catalog" href="#">15500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -175,7 +181,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img class="catalog-item-image" src="img/bosch-bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <p class="catalog-old-price">30500 Р.</p>
               <a class="button-catalog" href="#">25500 Р.</a>
               <ul class="catalog-item-navigation">
@@ -185,7 +191,7 @@
             </li>
             <li class="catalog-item catalog-item-is-new">
               <h3>Перфоратор BOSCH BFG 2000</h3>
-              <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img class="catalog-item-image" src="img/bosch-bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <p class="catalog-old-price"></p>
               <a class="button-catalog" href="#">12500 Р.</a>
               <ul class="catalog-item-navigation">
