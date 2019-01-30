@@ -51,98 +51,102 @@
         <div class="container">
           <h2 class="visually-hidden">Предлагаемые товары и услуги</h2>
           <div class="offers-block">
-            <div class="offers-items-group">
-              <div class="offers-item">
-                <h3>Материалы</h3>
-                <a class="button-offers" href="#">На любой вкус</a>
+            <div class="offers-column-left">
+              <ul class="offers-group-horizontal">
+                <li class="offers-item">
+                  <h3>Материалы</h3>
+                  <a class="button-offers" href="#">На любой вкус</a>
+                </li>
+                <li class="offers-item">
+                  <h3>Инструмент</h3>
+                  <a class="button-offers" href="#">На все случаи</a>
+                </li>
+              </ul>
+              <div class="slider">
+                <input type="radio" id="slide-1" name="slide-1" checked>
+                <input type="radio" id="slide-2" name="slide-2">
+                <!-- Абсолютно спозиционированные элементы -->
+                <label class="slider-left-arrow" for="slide-1"></label>
+                <label class="slider-right-arrow" for="slide-2"></label>
+                <label class="slider-btn" for="slide-1"></label>
+                <label class="slider-btn" for="slide-2"></label>
+                <!--/Абсолютно спозиционированные элементы -->
+                <div class="slider-1">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость</p>
+                  <a class="button" href="#">Открыть каталог</a>
+                </div>
+                <div class="slider-2">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button" href="#">Открыть каталог</a>
+                </div>
               </div>
-              <div class="offers-item">
-                <h3>Инструмент</h3>
-                <a class="button-offers" href="#">На все случаи</a>
-              </div>
             </div>
-            <div class="slider">
-              <input type="radio" id="slide-1" name="slide-1" checked>
-              <input type="radio" id="slide-2" name="slide-2">
-              <!-- Абсолютно спозиционированные элементы -->
-              <label class="slider-left-arrow" for="slide-1"></label>
-              <label class="slider-right-arrow" for="slide-2"></label>
-              <label class="slider-btn" for="slide-1"></label>
-              <label class="slider-btn" for="slide-2"></label>
-              <!--/Абсолютно спозиционированные элементы -->
-              <div class="slider-1">
-                <h3>Дрели</h3>
-                <p>Соседям на радость</p>
-                <a class="button" href="#">Открыть каталог</a>
-              </div>
-              <div class="slider-2">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button" href="#">Открыть каталог</a>
-              </div>
-            </div>
-            <div class="offers-item">
-              <h3>Техника</h3>
-              <a class="button-offers" href="#">Для стройки</a>
-            </div>
-            <div class="offers-item">
-              <h3>Скидки 50%</h3>
-              <a class="button-offers" href="#">На 350 товаров</a>
-            </div>
-            <div class="offers-item">
-              <h3>Доставка</h3>
-              <a class="button-offers" href="#">Бесплатно</a>
-            </div>
+            <ul class="offers-group-vertical">
+              <li class="offers-item">
+                <h3>Техника</h3>
+                <a class="button-offers" href="#">Для стройки</a>
+              </li>
+              <li class="offers-item">
+                <h3>Скидки 50%</h3>
+                <a class="button-offers" href="#">На 350 товаров</a>
+              </li>
+              <li class="offers-item">
+                <h3>Доставка</h3>
+                <a class="button-offers" href="#">Бесплатно</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
       <section class="popular-products">
         <div class="container">
-          <div class="popular-header">
+          <header class="popular-header">
             <h2>Популярные товары:</h2>
             <a class="button" href="#">Все популярные товары</a>
-          </div>
+          </header>
           <ul class="popular-products-list">
             <li class="catalog-item">
                 <h3>Перфоратор BOSCH BFG 9000</h3>
-                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+                <img class="catalog-item-image" src="img/bosch-bfg9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                 <p class="catalog-old-price">32500 Р.</p>
                 <a class="button-catalog" href="#">25500 Р.</a>
                 <ul class="catalog-item-navigation">
                   <li class="catalog-item-buy"><a href="#">Купить</a></li>
                   <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
                 </ul>
-              </li>
-              <li class="catalog-item">
-                <h3>Перфоратор BOSCH BFG 3000</h3>
-                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                <p class="catalog-old-price">22500 Р.</p>
-                <a class="button-catalog" href="#">15500 Р.</a>
-                <ul class="catalog-item-navigation">
-                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
-                </ul>
-              </li>
-              <li class="catalog-item">
-                <h3>Перфоратор BOSCH BFG 6000</h3>
-                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                <p class="catalog-old-price">30500 Р.</p>
-                <a class="button-catalog" href="#">25500 Р.</a>
-                <ul class="catalog-item-navigation">
-                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
-                </ul>
-              </li>
-              <li class="catalog-item">
-                <h3>Перфоратор BOSCH BFG 2000</h3>
-                <img class="catalog-item-image" src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
-                <p class="catalog-old-price"></p>
-                <a class="button-catalog" href="#">12500 Р.</a>
-                <ul class="catalog-item-navigation">
-                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
-                </ul>
-              </li>
+            </li>
+            <li class="catalog-item">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <img class="catalog-item-image" src="img/bosch-bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <p class="catalog-old-price">22500 Р.</p>
+              <a class="button-catalog" href="#">15500 Р.</a>
+              <ul class="catalog-item-navigation">
+                <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+              </ul>
+            </li>
+            <li class="catalog-item">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <img class="catalog-item-image" src="img/bosch-bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <p class="catalog-old-price">30500 Р.</p>
+              <a class="button-catalog" href="#">25500 Р.</a>
+              <ul class="catalog-item-navigation">
+                <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+              </ul>
+            </li>
+            <li class="catalog-item">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <img class="catalog-item-image" src="img/bosch-bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <p class="catalog-old-price"></p>
+              <a class="button-catalog" href="#">12500 Р.</a>
+              <ul class="catalog-item-navigation">
+                <li class="catalog-item-buy"><a href="#">Купить</a></li>
+                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </section>
@@ -151,33 +155,33 @@
           <div class="popular-header">
             <h2>Популярные производители</h2>
             <a class="button" href="#">Все производители:</a>
-            <ul class="popular-brands-list">
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Bosch"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Makita"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="DeWalt"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Интерскол"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Hitachi"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="LG"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="AEG"></a>
-              </li>
-              <li>
-                <a href="#"><img src="http://placehold.it/150x100" width="220" height="130" alt="Metabo"></a>
-              </li>
-            </ul>
           </div>
+          <ul class="popular-brands-list">
+            <li>
+              <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Makita.jpg" width="123" height="40" alt="Makita"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="DeWalt"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="Интерскол"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/LG.jpg" width="121" height="73" alt="LG"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/AEG.jpg" width="151" height="96" alt="AEG"></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="Metabo"></a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="services">
@@ -186,14 +190,14 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-block">
-              <input type="checkbox" id="delivery" checked>
-              <input type="checkbox" id="warranty">
-              <input type="checkbox" id="credit">
-              <ul class="services-list">
-                <label for="delivery"></label>
-                <label for="warranty"></label>
-                <label for="credit"></label>
-              </ul>
+            <input type="checkbox" id="delivery" checked>
+            <input type="checkbox" id="warranty">
+            <input type="checkbox" id="credit">
+            <ul class="services-list">
+              <label for="delivery"></label>
+              <label for="warranty"></label>
+              <label for="credit"></label>
+            </ul>
             <div class="service-description service-description-delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо 
@@ -235,7 +239,7 @@
             <p>Вы можете забрать товар сами,
             заехав в наш офис:</p>
             <a class="map" href="#">
-              <img src="http://placehold.it/150x100" width="300" height="158" alt="Переход на сервис карт">
+              <img src="img/map.jpg" width="300" height="158" alt="Переход на сервис карт">
             </a>
             <a class="button" href="#">Заблудились? Напишите нам!</a>
           </section>
