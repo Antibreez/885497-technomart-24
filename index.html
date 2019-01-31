@@ -63,8 +63,8 @@
                 </li>
               </ul>
               <div class="slider">
-                <input type="radio" id="slide-1" name="slide-1" checked>
-                <input type="radio" id="slide-2" name="slide-2">
+                <input type="radio" id="slide-1" name="slider-item" checked>
+                <input type="radio" id="slide-2" name="slider-item">
                 <!-- Абсолютно спозиционированные элементы -->
                 <label class="slider-left-arrow" for="slide-1"></label>
                 <label class="slider-right-arrow" for="slide-2"></label>
@@ -190,9 +190,9 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-block">
-            <input type="checkbox" id="delivery" checked>
-            <input type="checkbox" id="warranty">
-            <input type="checkbox" id="credit">
+            <input type="radio" id="delivery" name="services-item" checked>
+            <input type="radio" id="warranty" name="services-item">
+            <input type="radio" id="credit" name="services-item">
             <ul class="services-list">
               <label for="delivery"></label>
               <label for="warranty"></label>
@@ -245,6 +245,29 @@
           </section>
         </div>
       </div>
+
+      <form class="popup-write-us" action="#" method="post">
+        <button class="popup-close" aria-label="Закрыть окно отправки письма"></button>
+         <div class="popup-top">
+          <div class="popup-name-email">
+            <div class="popup-name">
+              <label for="popup-name">Ваше имя:</label>
+              <input type="text" id="popup-name" name="popup-name" placeholder="Имя Фамилия">
+            </div>
+            <div class="popup-email">
+              <label for="popup-email">Ваш e-mail:</label>
+              <input type="text" id="popup-email" name="popup-email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="popup-letter">
+            <label for="popup-letter-field">Текст письма:</label>
+            <textarea id="popup-letter-field" name="popup-letter-field" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="popup-bottom">
+            <input class="button" type="submit" value="Отправить">
+        </div>        
+      </form>
     </main>
 
     <footer class="main-footer">
