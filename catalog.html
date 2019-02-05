@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="header-top">
       <div class="container">
-        <a class="header-logo" href="index.html">Техномарт</a>
+        <a class="header-logo" href="index.html"><img src="img/technomart-logo.svg" width="110" height="17" alt="Логотип магазина Техномарт"></a>
         <form>
           <label for="search-field">Поиск:</label>
           <input type="search" name="search" id="search-field" placeholder="Поиск:">
@@ -67,13 +68,13 @@
         <section class="filters">
           <h2>Фильтр:</h2>
           <form action="#" method="get">
-            <div class="filters-price">
-              <h3>Цена:</h3>
+            <fieldset class="filters-price">
+              <legend>Цена:</legend>
               <div class="range-block"></div>
               <p><span>0</span>-<span>30000</span></p>
-            </div>
-            <div class="filters-brands">
-              <h3>Прозводители:</h3>
+            </fieldset>
+            <fieldset class="filters-brands">
+              <legend>Прозводители:</legend>
               <ul class="filters-brands-items">
                 <li>
                   <input class="visually-hidden" type="checkbox" name="bosch" id="bosch">
@@ -96,9 +97,9 @@
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
-            </div>
-            <div class="filters-power">
-              <h3>Питание:</h3>
+            </fieldset>
+            <fieldset class="filters-power">
+              <legend>Питание:</legend>
               <ul class="filters-power-items">
                 <li>
                   <input class="visually-hidden" type="radio" name="power-filter" id="battery">
@@ -109,7 +110,7 @@
                   <label for="wired">Сетевые</label>
                 </li>
               </ul>
-            </div>
+            </fieldset>
             <button class="show-button" type="submite">Показать</button>
           </form>
         </section>
@@ -232,8 +233,8 @@
       </div>
     </section>
 
-    <div class="popup-cart">
-      <button class="popup-close" aria-label="Закрыть окно сообщения о добавлении товара в корзину"></button>
+    <section class="popup-cart">
+      <h2 class="visually-hidden">Действия с товаром</h2>
       <div class="popup-top">
         <span class="popup-icon"></span>
         <p>Товар добавлен в корзину!</p>
@@ -242,14 +243,15 @@
         <a class="button" href="#">Оформить заказ</a>
         <button class="button-shopping" type="button">Продолжить покупки</button>
       </div>
-    </div>
+      <button class="popup-close" aria-label="Закрыть окно с сообщением"></button>
+    </section>
   </main>
 
     <footer class="main-footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-top-left">
-            <a class="footer-logo">Техномарт</a>
+            <a class="footer-logo"><img src="img/technomart-logo.svg" width="137" height="21" alt="Логотип магазина Техномарт"></a>
             <p footer-contacts>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </div>
