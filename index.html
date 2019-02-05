@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Техномарт</title>
   </head>
   <body>
     <header class="main-header">
@@ -10,7 +10,8 @@
           <div class="container">
             <a class="header-logo">Техномарт</a>
             <form>
-              <input type="search" name="search" placeholder="Поиск:">
+              <label for="search-field">Поиск:</label>
+              <input type="search" name="search" id="search-field" placeholder="Поиск:">
             </form>
             <a class="header-bookmarks" href="#">Закладки: 0</a>
             <a class="header-cart" href="#">Корзина: 0</a>
@@ -158,28 +159,28 @@
           </div>
           <ul class="popular-brands-list">
             <li>
-              <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
+              <a href="#"><img src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Makita.jpg" width="123" height="40" alt="Makita"></a>
+              <a href="#"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a>
             </li>
             <li>
-              <a href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="DeWalt"></a>
+              <a href="#"><img src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="Интерскол"></a>
+              <a href="#"><img src="img/Интерскол.png" width="200" height="88" alt="Интерскол"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi"></a>
+              <a href="#"><img src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a>
             </li>
             <li>
-              <a href="#"><img src="img/LG.jpg" width="121" height="73" alt="LG"></a>
+              <a href="#"><img src="img/LG.png" width="121" height="73" alt="LG"></a>
             </li>
             <li>
-              <a href="#"><img src="img/AEG.jpg" width="151" height="96" alt="AEG"></a>
+              <a href="#"><img src="img/AEG.png" width="151" height="96" alt="AEG"></a>
             </li>
             <li>
-              <a href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="Metabo"></a>
+              <a href="#"><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a>
             </li>
           </ul>
         </div>
@@ -239,7 +240,7 @@
             <p>Вы можете забрать товар сами,
             заехав в наш офис:</p>
             <a class="map" href="#">
-              <img src="img/map.jpg" width="300" height="158" alt="Переход на сервис карт">
+              <img src="img/map.png" width="300" height="158" alt="Переход на сервис карт">
             </a>
             <a class="button" href="#">Заблудились? Напишите нам!</a>
           </section>
@@ -247,8 +248,8 @@
       </div>
 
       <form class="popup-write-us" action="#" method="post">
-        <button class="popup-close" aria-label="Закрыть окно отправки письма"></button>
-         <div class="popup-top">
+        <button class="popup-close" type="button" aria-label="Закрыть окно отправки письма"></button>
+        <div class="popup-top">
           <div class="popup-name-email">
             <div class="popup-name">
               <label for="popup-name">Ваше имя:</label>
@@ -265,7 +266,7 @@
           </div>
         </div>
         <div class="popup-bottom">
-            <input class="button" type="submit" value="Отправить">
+          <button class="button" type="submite">Отправить</button>
         </div>        
       </form>
     </main>
@@ -300,9 +301,9 @@
           <p class="footer-copyright">© 2010–2019 Компания «Техномарт»
           Все права защищены</p>
           <ul class="footer-socials">
-            <li><a class="button-social button-social-vk" href="#">ВКонтакте</a></li>
-            <li><a class="button-social button-social-fb" href="#">Фэйсбук</a></li>
-            <li><a class="button-social button-social-inst" href="#">Инстаграм</a></li>
+            <li><a class="button-social button-social-vk" href="#" aria-label="Техномарт во ВКонтакте"></a></li>
+            <li><a class="button-social button-social-fb" href="#" atia-label="Техномарт на Фэйсбуке"></a></li>
+            <li><a class="button-social button-social-inst" href="#" aria-label="Техномарт в Инстаграме"></a></li>
           </ul>
           <div class="footer-feedback">
             <p>Обратная связь</p>
