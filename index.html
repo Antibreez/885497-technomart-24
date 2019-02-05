@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
         <div class="header-top">
           <div class="container">
-            <a class="header-logo">Техномарт</a>
+            <a class="header-logo"><img src="img/technomart-logo.svg" width="110" height="17" alt="Логотип магазина Техномарт"></a>
             <form>
               <label for="search-field">Поиск:</label>
               <input type="search" name="search" id="search-field" placeholder="Поиск:">
@@ -64,13 +65,11 @@
                 </li>
               </ul>
               <div class="slider">
-                <input type="radio" id="slide-1" name="slider-item" checked>
-                <input type="radio" id="slide-2" name="slider-item">
                 <!-- Абсолютно спозиционированные элементы -->
-                <label class="slider-left-arrow" for="slide-1"></label>
-                <label class="slider-right-arrow" for="slide-2"></label>
-                <label class="slider-btn" for="slide-1"></label>
-                <label class="slider-btn" for="slide-2"></label>
+                <button class="slider-left-arrow" type="button">Первый слайд</button>
+                <button class="slider-right-arrow" type="button">Второй слайд</button>
+                <button class="slider-btn" type="button">Первый слайд</button>
+                <button class="slider-btn" type="button">Второй слайд</button>
                 <!--/Абсолютно спозиционированные элементы -->
                 <div class="slider-1">
                   <h3>Дрели</h3>
@@ -112,7 +111,7 @@
                 <h3>Перфоратор BOSCH BFG 9000</h3>
                 <img class="catalog-item-image" src="img/bosch-bfg9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                 <p class="catalog-old-price">32500 Р.</p>
-                <a class="button-catalog" href="#">25500 Р.</a>
+                <p class="catalog-price">25500 Р.</p>
                 <ul class="catalog-item-navigation">
                   <li class="catalog-item-buy"><a href="#">Купить</a></li>
                   <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
@@ -122,7 +121,7 @@
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img class="catalog-item-image" src="img/bosch-bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <p class="catalog-old-price">22500 Р.</p>
-              <a class="button-catalog" href="#">15500 Р.</a>
+              <p class="catalog-price">15500 Р.</p>
               <ul class="catalog-item-navigation">
                 <li class="catalog-item-buy"><a href="#">Купить</a></li>
                 <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
@@ -132,7 +131,7 @@
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img class="catalog-item-image" src="img/bosch-bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <p class="catalog-old-price">30500 Р.</p>
-              <a class="button-catalog" href="#">25500 Р.</a>
+              <p class="catalog-price">25500 Р.</p>
               <ul class="catalog-item-navigation">
                 <li class="catalog-item-buy"><a href="#">Купить</a></li>
                 <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
@@ -142,7 +141,7 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img class="catalog-item-image" src="img/bosch-bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
               <p class="catalog-old-price"></p>
-              <a class="button-catalog" href="#">12500 Р.</a>
+              <p class="catalog-price">12500 Р.</p>
               <ul class="catalog-item-navigation">
                 <li class="catalog-item-buy"><a href="#">Купить</a></li>
                 <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
@@ -191,13 +190,16 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-block">
-            <input type="radio" id="delivery" name="services-item" checked>
-            <input type="radio" id="warranty" name="services-item">
-            <input type="radio" id="credit" name="services-item">
             <ul class="services-list">
-              <label for="delivery"></label>
-              <label for="warranty"></label>
-              <label for="credit"></label>
+              <li>
+                <button class="services-item" type="button">Доставка</button>
+              </li>
+              <li>
+                <button class="services-item" type="button">Гарантия</button>
+              </li>
+              <li>
+                <button class="services-item" type="button">Кредит</button>
+              </li>
             </ul>
             <div class="service-description service-description-delivery">
               <h3>Доставка</h3>
@@ -247,35 +249,38 @@
         </div>
       </div>
 
-      <form class="popup-write-us" action="#" method="post">
-        <button class="popup-close" type="button" aria-label="Закрыть окно отправки письма"></button>
-        <div class="popup-top">
-          <div class="popup-name-email">
-            <div class="popup-name">
-              <label for="popup-name">Ваше имя:</label>
-              <input type="text" id="popup-name" name="popup-name" placeholder="Имя Фамилия">
+      <section>
+        <h2 class="visually-hidden">Окно отправки сообщения</h2>
+        <form class="popup-write-us" action="#" method="post">        
+          <div class="popup-top">
+            <div class="popup-name-email">
+              <div class="popup-name">
+                <label for="popup-name">Ваше имя:</label>
+                <input type="text" id="popup-name" name="popup-name" placeholder="Имя Фамилия">
+              </div>
+              <div class="popup-email">
+                <label for="popup-email">Ваш e-mail:</label>
+                <input type="text" id="popup-email" name="popup-email" placeholder="email@example.com">
+              </div>
             </div>
-            <div class="popup-email">
-              <label for="popup-email">Ваш e-mail:</label>
-              <input type="text" id="popup-email" name="popup-email" placeholder="email@example.com">
+            <div class="popup-letter">
+              <label for="popup-letter-field">Текст письма:</label>
+              <textarea id="popup-letter-field" name="popup-letter-field" placeholder="В свободной форме"></textarea>
             </div>
           </div>
-          <div class="popup-letter">
-            <label for="popup-letter-field">Текст письма:</label>
-            <textarea id="popup-letter-field" name="popup-letter-field" placeholder="В свободной форме"></textarea>
-          </div>
-        </div>
-        <div class="popup-bottom">
-          <button class="button" type="submite">Отправить</button>
-        </div>        
-      </form>
+          <div class="popup-bottom">
+            <button class="button" type="submite">Отправить</button>
+          </div>        
+        </form>
+        <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>
+      </section>
     </main>
 
     <footer class="main-footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-top-left">
-            <a class="footer-logo">Техномарт</a>
+            <a class="header-logo"><img src="img/technomart-logo.svg" width="137" height="21" alt="Логотип магазина Техномарт"></a>
             <p footer-contacts>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </div>
