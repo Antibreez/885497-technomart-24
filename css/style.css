@@ -1,0 +1,203 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.main-header {
+  background-color: #f4f7f9;
+}
+
+.header-top a,
+.header-navigation a {
+  color: #ffffff;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.header-slogan {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-not-authorized {
+  font-size: 21px;
+  line-height: 21px;;
+}
+
+.authorization-signin,
+.authorization-signup {
+  color: #000000;
+}
+
+.header-navigation {
+  font-size: 17px;
+  line-height: 17px;
+
+  background-color: #32425c;
+}
+
+.offers-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.offers-item-materials {
+  background-color: #ffbf47;
+}
+
+.offers-item-tools {
+  background-color: #3bbce3;
+}
+
+.offers-item-technics {
+  background-color: #dc91d8;
+}
+
+.offers-item-discount {
+  background-color: #8ed78f;
+}
+
+.offers-item-delivery {
+  background-color: #ffc047;
+}
+
+.slider h3{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.slider-drills {
+  width: 620px;
+  height: 266px;
+
+  background-image: url("../img/slide-drills.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-perforators {
+  width: 620px;
+  height: 266px;
+
+  background-image: url("../img/slide-perforators.jpg");
+  background-repeat: no-repeat;
+}
+
+.button-offers {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popular-products h2,
+.popular-brands h2,
+.services h2,
+.about-company h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.popular-products h2,
+.popular-brands h2 {
+  color: #32425c;
+}
+
+.popular-header {
+  background-color: #f9f5f0;
+}
+
+.popular-products-list,
+.catalog-item-navigation {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-item {
+  text-align: center;
+}
+
+.catalog-item h3 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-old-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.catalog-price {
+  width: 140px;
+  height: 38px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-image: url("../img/red-button.svg");
+}
+
+.button-buy {
+  background-color: #63a63e;
+}
+
+
