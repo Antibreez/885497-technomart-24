@@ -3,49 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-        <div class="header-top">
-          <div class="container">
-            <a class="header-logo"><img src="img/technomart-logo.svg" width="110" height="17" alt="Логотип магазина Техномарт"></a>
-            <form>
-              <label for="search-field">Поиск:</label>
-              <input type="search" name="search" id="search-field" placeholder="Поиск:">
-            </form>
-            <a class="header-bookmarks" href="#">Закладки: 0</a>
-            <a class="header-cart" href="#">Корзина: 0</a>
-            <a class="header-order" href="#">Оформить заказ</a>
-          </div>
-        </div>
-
+      <div class="header-top">
         <div class="container">
-          <div class="header-middle">
-              <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-              <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-              <div class="header-contacts">
-                <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              </div>
-              <div class="header-not-authorized">
-                  <a class="authorization-signin" href="#">Войти</a>
-                  <a class="authorization-signup" href="#">Регистрация</a>
-              </div>
-          </div>
-          
-          <nav class="header-navigation">
-            <ul class="navigation-list">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
+          <a class="header-logo">
+            <img src="img/technomart-logo.svg" width="110" height="17" alt="Логотип магазина Техномарт">
+          </a>
+          <form>
+            <input type="search" name="search" id="search-field" placeholder="Поиск:">
+          </form>
+          <a class="header-bookmarks" href="#">Закладки: 0</a>
+          <a class="header-cart" href="#">Корзина: 0</a>
+          <a class="header-order" href="#">Оформить заказ</a>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="header-middle">
+          <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="header-contacts">
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="header-not-authorized">
+            <a class="authorization-signin" href="#">Войти</a>
+            <a class="authorization-signup" href="#">Регистрация</a>
+          </div>
+        </div>
+          
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -249,9 +250,8 @@
         </div>
       </div>
 
-      <section>
-        <h2 class="visually-hidden">Окно отправки сообщения</h2>
-        <form class="popup-write-us" action="#" method="post">        
+      <div class="popup-message">
+        <form action="#" method="post">
           <div class="popup-top">
             <div class="popup-name-email">
               <div class="popup-name">
@@ -273,7 +273,7 @@
           </div>        
         </form>
         <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>
-      </section>
+      </div>
     </main>
 
     <footer class="main-footer">
