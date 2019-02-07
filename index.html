@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -24,17 +26,17 @@
       <div class="container">
         <div class="header-middle">
           <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="header-slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <div class="header-contacts">
             <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-not-authorized">
-            <a class="authorization-signin" href="#">Войти</a>
-            <a class="authorization-signup" href="#">Регистрация</a>
+              <a class="authorization-signin" href="#">Войти</a>
+              <a class="authorization-signup" href="#">Регистрация</a>
           </div>
         </div>
-          
+        
         <nav class="header-navigation">
           <ul class="navigation-list">
             <li><a href="#">Главная</a></li>
@@ -56,13 +58,13 @@
           <div class="offers-block">
             <div class="offers-column-left">
               <ul class="offers-group-horizontal">
-                <li class="offers-item">
+                <li class="offers-item offers-item-materials">
                   <h3>Материалы</h3>
-                  <a class="button-offers" href="#">На любой вкус</a>
+                  <a class="button button-offers" href="#">На любой вкус</a>
                 </li>
-                <li class="offers-item">
+                <li class="offers-item offers-item-tools">
                   <h3>Инструмент</h3>
-                  <a class="button-offers" href="#">На все случаи</a>
+                  <a class="button button-offers" href="#">На все случаи</a>
                 </li>
               </ul>
               <div class="slider">
@@ -72,12 +74,12 @@
                 <button class="slider-btn" type="button">Первый слайд</button>
                 <button class="slider-btn" type="button">Второй слайд</button>
                 <!--/Абсолютно спозиционированные элементы -->
-                <div class="slider-1">
+                <div class="slider slider-drills">
                   <h3>Дрели</h3>
                   <p>Соседям на радость</p>
                   <a class="button" href="#">Открыть каталог</a>
                 </div>
-                <div class="slider-2">
+                <div class="slider slider-perforators">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
                   <a class="button" href="#">Открыть каталог</a>
@@ -85,17 +87,17 @@
               </div>
             </div>
             <ul class="offers-group-vertical">
-              <li class="offers-item">
+              <li class="offers-item offers-item-technics">
                 <h3>Техника</h3>
-                <a class="button-offers" href="#">Для стройки</a>
+                <a class="button button-offers" href="#">Для стройки</a>
               </li>
-              <li class="offers-item">
+              <li class="offers-item offers-item-discount">
                 <h3>Скидки 50%</h3>
-                <a class="button-offers" href="#">На 350 товаров</a>
+                <a class="button button-offers" href="#">На 350 товаров</a>
               </li>
-              <li class="offers-item">
+              <li class="offers-item offers-item-delivery">
                 <h3>Доставка</h3>
-                <a class="button-offers" href="#">Бесплатно</a>
+                <a class="button button-offers" href="#">Бесплатно</a>
               </li>
             </ul>
           </div>
@@ -114,8 +116,8 @@
                 <p class="catalog-old-price">32500 Р.</p>
                 <p class="catalog-price">25500 Р.</p>
                 <ul class="catalog-item-navigation">
-                  <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                  <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                  <li><a class="button button-buy" href="#">Купить</a></li>
+                  <li><a class="button button-bookmarking" href="#">В закладки</a></li>
                 </ul>
             </li>
             <li class="catalog-item">
@@ -124,8 +126,8 @@
               <p class="catalog-old-price">22500 Р.</p>
               <p class="catalog-price">15500 Р.</p>
               <ul class="catalog-item-navigation">
-                <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                <li><a class="button button-buy" href="#">Купить</a></li>
+                <li><a class="button button-bookmarking" href="#">В закладки</a></li>
               </ul>
             </li>
             <li class="catalog-item">
@@ -134,8 +136,8 @@
               <p class="catalog-old-price">30500 Р.</p>
               <p class="catalog-price">25500 Р.</p>
               <ul class="catalog-item-navigation">
-                <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                <li><a class="button button-buy" href="#">Купить</a></li>
+                <li><a class="button button-bookmarking" href="#">В закладки</a></li>
               </ul>
             </li>
             <li class="catalog-item">
@@ -144,8 +146,8 @@
               <p class="catalog-old-price"></p>
               <p class="catalog-price">12500 Р.</p>
               <ul class="catalog-item-navigation">
-                <li class="catalog-item-buy"><a href="#">Купить</a></li>
-                <li class="catalog-item-bookmarking"><a href="#">В закладки</a></li>
+                <li><a class="button button-buy" href="#">Купить</a></li>
+                <li><a class="button button-bookmarking" href="#">В закладки</a></li>
               </ul>
             </li>
           </ul>
@@ -154,7 +156,7 @@
       <section class="popular-brands">
         <div class="container">
           <div class="popular-header">
-            <h2>Популярные производители</h2>
+            <h2>Популярные производители:</h2>
             <a class="button" href="#">Все производители:</a>
           </div>
           <ul class="popular-brands-list">
@@ -270,7 +272,7 @@
           </div>
           <div class="popup-bottom">
             <button class="button" type="submite">Отправить</button>
-          </div>        
+          </div>
         </form>
         <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>
       </div>
