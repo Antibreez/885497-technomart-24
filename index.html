@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -74,12 +74,12 @@
                 <button class="slider-btn" type="button">Первый слайд</button>
                 <button class="slider-btn" type="button">Второй слайд</button>
                 <!--/Абсолютно спозиционированные элементы -->
-                <div class="slider slider-drills">
+                <div class="slide slide-drills">
                   <h3>Дрели</h3>
-                  <p>Соседям на радость</p>
+                  <p>Соседям на радость!</p>
                   <a class="button" href="#">Открыть каталог</a>
                 </div>
-                <div class="slider slider-perforators">
+                <div class="slide slide-perforators">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
                   <a class="button" href="#">Открыть каталог</a>
@@ -195,7 +195,7 @@
           <div class="services-block">
             <ul class="services-list">
               <li>
-                <button class="services-item" type="button">Доставка</button>
+                <button class="services-item services-item-active" type="button">Доставка</button>
               </li>
               <li>
                 <button class="services-item" type="button">Гарантия</button>
@@ -254,7 +254,7 @@
 
       <div class="popup-message">
         <form action="#" method="post">
-          <div class="popup-top">
+          <div class="popup-message-top">
             <div class="popup-name-email">
               <div class="popup-name">
                 <label for="popup-name">Ваше имя:</label>
@@ -270,8 +270,8 @@
               <textarea id="popup-letter-field" name="popup-letter-field" placeholder="В свободной форме"></textarea>
             </div>
           </div>
-          <div class="popup-bottom">
-            <button class="button" type="submite">Отправить</button>
+          <div class="popup-message-bottom">
+            <button class="button button-send" type="submite">Отправить</button>
           </div>
         </form>
         <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>

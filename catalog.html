@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -35,7 +35,7 @@
                 <a class="header-username" href="#">Равшан Джамшутович</a>
                 <a class="header-logout" href="#" aria-label="Выйти"></a>
               </div>
-              <ul header-user-navigation>
+              <ul class="header-user-navigation">
                 <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
               </ul>
@@ -56,7 +56,7 @@
       </div>
     </header>
 
-      <main>
+      <main class="main-catalog">
         <div class="container">
           <ul class="breadcrumbs">
             <li class="breadcrumbs-home"><a href="index.html" aria-label="Главная"></a></li>
@@ -74,21 +74,21 @@
                 <fieldset class="filters-price">
                   <legend>Цена:</legend>
                   <div class="range-block"></div>
-                  <p><span>0</span>-<span>30000</span></p>
+                  <p><span>0</span>&mdash;<span>30000</span></p>
                 </fieldset>
                 <fieldset class="filters-brands">
-                  <legend>Прозводители:</legend>
+                  <legend>Производители:</legend>
                   <ul class="filters-brands-items">
                     <li>
-                      <input class="visually-hidden" type="checkbox" name="bosch" id="bosch">
+                      <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
                       <label for="bosch">Bosch</label>
                     </li>
                     <li>
-                      <input class="visually-hidden" type="checkbox" name="interskol" id="interskol">
+                      <input class="visually-hidden" type="checkbox" name="interskol" id="interskol" disabled>
                       <label for="interskol">Интерскол</label>
                     </li>
                     <li>
-                     <input class="visually-hidden" type="checkbox" name="makita" id="makita">
+                     <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
                       <label for="makita">Makita</label>
                     </li>
                     <li>
@@ -105,7 +105,7 @@
                   <legend>Питание:</legend>
                   <ul class="filters-power-items">
                     <li>
-                      <input class="visually-hidden" type="radio" name="power-filter" id="battery">
+                      <input class="visually-hidden" type="radio" name="power-filter" id="battery" checked>
                       <label for="battery">Аккумуляторные</label>
                     </li>
                     <li>
@@ -121,9 +121,9 @@
               <h2 class="visually-hidden">Каталог товаров</h2>
               <div class="sorting">
                 <h3>Сортировка:</h3>
-                <a class="sorting-price sorting-active" href="#">По цене</a>
-                <a class="sorting-type">По типу</a>
-                <a class="sorting-functions">По функционалу</a>
+                <a class="sorting-item sorting-item-active">По цене</a>
+                <a class="sorting-item" href="#">По типу</a>
+                <a class="sorting-item" href="#">По функционалу</a>
                 <a class="sorting-increase" href="#" aria-label="По увеличению"></a>
                 <a class="sorting-decrease" href="#" aria-label="По уменьшению"></a>
               </div>
@@ -220,10 +220,10 @@
                 </li>
               </ul>
               <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-next"><a href="#">Следующая</a></li>
+                <li><a class="pagination-item pagination-item-current">1</a></li>
+                <li><a class="pagination-item" href="#">2</a></li>
+                <li><a class="pagination-item" href="#">3</a></li>
+                <li><a class="pagination-item" href="#">Следующая</a></li>
               </ul>
             </section>
           </div>
@@ -237,14 +237,14 @@
         </section>
 
         <div class="popup-cart">
-          <div class="popup-top">
+          <div class="popup-cart-top">
             <p>Товар добавлен в корзину!</p>
           </div>
-          <div class="popup-bottom">
+          <div class="popup-cart-bottom">
             <a class="button" href="#">Оформить заказ</a>
-            <button class="button-shopping" type="button">Продолжить покупки</button>
+            <button class="button button-shopping" type="button">Продолжить покупки</button>
           </div>
-          <button class="popup-close" aria-label="Закрыть окно с сообщением"></button>
+          <button class="popup-close" type="button" aria-label="Закрыть окно с сообщением"></button>
         </div>
       </main>
 
