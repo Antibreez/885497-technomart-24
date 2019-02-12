@@ -58,6 +58,7 @@ a {
 }
 
 .section-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -69,6 +70,12 @@ a {
   color: #32425c;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+
 /*
 ================================================
 Стили хэдера
@@ -76,6 +83,8 @@ a {
 */
 
 .main-header {
+  padding-bottom: 60px;
+
   background-color: #f4f7f9;
 }
 
@@ -90,6 +99,10 @@ a {
   color: #ffffff;
 
   background-color: #293449;
+}
+
+.header-top .container {
+  display: flex;
 }
 
 .header-top input {
@@ -128,11 +141,23 @@ a {
   background-color: #ffffff;
 }
 
+.header-middle {
+  display: flex;
+}
+
 .header-slogan {
+  width: 197px;
+  margin-left: 53px;
+
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+}
+
+.header-contacts {
+  width: 270px;
+  margin-left: 70px;
 }
 
 .header-phone {
@@ -145,6 +170,11 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.header-not-authorized,
+.header-authorized {
+  margin-left: auto;
 }
 
 .header-not-authorized,
@@ -218,6 +248,31 @@ a {
   color: #ffffff;
 }
 
+.offers-block {
+  display: flex;
+  margin-bottom: 53px;
+
+  justify-content: space-between;
+}
+
+.offers-group-horizontal,
+.offers-group-vertical {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.offers-group-vertical {
+  flex-direction: column;
+}
+
+.offers-item {
+  width: 300px;
+}
+
 .offers-item h3 {
   font-size: 24px;
   line-height: 30px;
@@ -267,6 +322,7 @@ a {
 }
 
 .slide-perforators {
+  display: none;
   background-image: url("../img/slide-perforators.jpg");
   background-repeat: no-repeat;
 }
@@ -284,12 +340,30 @@ a {
 }
 
 .popular-header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+
   background-color: #f9f5f0;
 }
 
-.popular-products-list,
+.popular-products-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
 .catalog-item-navigation {
   list-style: none;
+}
+
+.catalog-item {
+  width: 218px;
 }
 
 .catalog-item h3 {
@@ -363,7 +437,22 @@ a {
   border: 3px solid rgba(50, 66, 92, 0.3);
 }
 
+.popular-brands-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 85px;
+
+  list-style: none;
+}
+
 .popular-brands-list a {
+  display: block;
+  width: 218px;
+  height: 143px;
+
   background-color: #ffffff;
 }
 
@@ -376,9 +465,16 @@ a {
 }
 
 .services {
+  margin-bottom: 80px;
+  padding: 65px 0 99px 0;
+
   color: #000000;
 
   background-color: #f4f8fa;
+}
+
+.services-block {
+  display: flex;
 }
 
 .services p {
@@ -425,7 +521,16 @@ a {
   color: #32425c;
 }
 
+.about-company-contacts .container {
+  display: flex;
+  margin-bottom: 86px;
+
+  justify-content: space-between;
+}
+
 .about-company {
+  width: 530px;
+
   color: #000000;
 }
 
@@ -439,6 +544,10 @@ a {
 .partners {
   font-size: 18px;
   line-height: 20px;
+}
+
+.map {
+  display: block;
 }
 
 .contacts {
@@ -465,6 +574,8 @@ a {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+
+  list-style: none;
 }
 
 .breadcrumbs a {
@@ -472,6 +583,9 @@ a {
 }
 
 .catalog-title {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -481,7 +595,13 @@ a {
   background-color: #f2f6f8;
 }
 
+.catalog-items-block {
+  display: flex;
+}
+
 .filters {
+  width: 220px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -491,6 +611,8 @@ a {
 }
 
 .filters h2 {
+  margin: 0;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -498,10 +620,23 @@ a {
   background-color: #f7f3ec;
 }
 
+.filters fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
 .filters legend {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.filters ul {
+  list-style: none;
+
+  line-height: 40px;
 }
 
 .range-block {
@@ -535,10 +670,15 @@ a {
 }
 
 .sorting {
+  margin-bottom: 20px;
+
   background-color: #f7f3ec;
 }
 
 .sorting h3 {
+  display: inline-block;
+  margin: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -571,7 +711,23 @@ a {
   border: none;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
 .pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
   list-style: none;
 }
 
@@ -605,12 +761,15 @@ a {
 }
 
 .perforator-info {
+  padding: 62px 0 68px 0;
   color: #000000;
 
   background-color: #f2f6f8;
 }
 
 .perforator-info p {
+  margin: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -624,6 +783,7 @@ a {
 */
 
 .popup-message {
+  display: none;
   color: #000000;
 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
@@ -655,6 +815,10 @@ a {
 Стили модального окна на catalog.html
 ================================================
 */
+
+.popup-cart {
+  display: none;
+}
 
 .popup-cart-top {
   font-size: 30px;
@@ -688,6 +852,8 @@ a {
 
 .main-footer {
   color: #ffffff;
+
+  background-color: #32425c;
 }
 
 .main-footer ul {
@@ -695,14 +861,19 @@ a {
 }
 
 .footer-top {
+  display: flex;
+  justify-content: space-between;
+
   font-size: 18px;
   line-height: 24px;
-
-  background-color: #32425c;
 }
 
 .footer-top a {
   color: #ffffff;
+}
+
+.footer-top-left {
+  width: 340px;
 }
 
 .footer-navigation-offers a {
@@ -714,6 +885,10 @@ a {
   line-height: 18px;
 
   background-color: #293449;
+}
+
+.footer-bottom .container {
+  display: flex;
 }
 
 .footer-bottom a {
