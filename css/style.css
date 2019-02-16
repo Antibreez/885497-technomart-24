@@ -76,6 +76,22 @@ a {
   width: 940px;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*
 ================================================
 Стили хэдера
@@ -103,20 +119,89 @@ a {
 
 .header-top .container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.header-top a {
+  display: block;
+  padding: 12px 0 12px 0;
+}
+
+.header-top .header-logo {
+  padding: 13px 55px 7px;
+
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .header-top input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px 0 50px;
+
   background-color: #293449;
   border: none;
 }
 
+.header-top form {
+  position: relative;
+  flex-grow: 1;
+  min-width: 220px; */
+}
+
+.header-top form::after {
+  content: "";
+  top: 12px;
+  left: 17px;
+
+  position: absolute;
+  width: 17px;
+  height: 17px;
+
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
+.header-top .header-bookmarks,
+.header-top .header-cart {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 31px;
+}
+
+.header-top .header-bookmarks::before {
+  content: "";
+  top: 12px;
+  left: 17px;
+
+  position: absolute;
+  width: 14px;
+  height: 16px;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
 .header-top .header-order {
+  padding-left: 20px;
+  padding-right: 21px;
   background-color: #63a63e;
 }
 
 .header-top input:hover,
 .header-top a:hover {
   background-color: #212a3a;
+}
+
+.header-top .header-logo:hover {
+  background-color: #ca2c37;
+
+  box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .header-top .header-order:hover {
@@ -127,6 +212,12 @@ a {
   color: rgba(255, 255, 255, 0.6);
 
   background-color: #161d29;
+}
+
+.header-top .header-logo:active {
+  background-color: #ba2732;
+
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .header-top .header-order:active {
@@ -218,6 +309,8 @@ a {
 }
 
 .navigation-list {
+  display: flex;
+
   list-style: none;
 }
 
@@ -255,18 +348,27 @@ a {
   justify-content: space-between;
 }
 
-.offers-group-horizontal,
-.offers-group-vertical {
+.offers-group-horizontal {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.offers-group-horizontal .offers-item:nth-child(2) {
+  margin-left: 20px;
+}
+
 .offers-group-vertical {
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.offers-group-vertical .offers-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .offers-item {
@@ -274,6 +376,9 @@ a {
 }
 
 .offers-item h3 {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -350,12 +455,15 @@ a {
 
 .popular-products-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 
   list-style: none;
+}
+
+.popular-products-list .catalog-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .catalog-item-navigation {
@@ -364,6 +472,8 @@ a {
 
 .catalog-item {
   width: 218px;
+
+  border: 1px solid #eaeaea;
 }
 
 .catalog-item h3 {
@@ -439,21 +549,31 @@ a {
 
 .popular-brands-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 
   list-style: none;
 }
 
 .popular-brands-list a {
-  display: block;
+  display: flex;
   width: 218px;
   height: 143px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
   background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.popular-brands-list img {
+  margin: auto;
+}
+
+.popular-brands-list li:nth-child(4n + 4) a {
+  margin-right: 0;
 }
 
 .popular-brands-list a:hover {
@@ -478,17 +598,38 @@ a {
 }
 
 .services p {
+  width: 410px;
+  margin: 0;
+  margin-bottom: 70px;
+  margin-top: 28px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
 }
 
+.services h3 {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
 .services-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .services-item {
+  width: 100%;
+
   font: inherit;
 
   font-size: 21px;
@@ -513,12 +654,20 @@ a {
   background-color: #ffffff;
 }
 
-.services h3 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #32425c;
+.service-description-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service-description-list li:not(:first-child) {
+  display: none;
+}
+
+.service-description-delivery p {
+  width: 278px;
+  margin-bottom: 0;
 }
 
 .about-company-contacts .container {
@@ -597,6 +746,7 @@ a {
 
 .catalog-items-block {
   display: flex;
+  justify-content: space-between;
 }
 
 .filters {
@@ -669,6 +819,10 @@ a {
   border: 1px solid #e5e5e5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .sorting {
   margin-bottom: 20px;
 
@@ -716,10 +870,18 @@ a {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 52px;
-  justify-content: space-between;
+  margin-bottom: 32px;
 
   list-style: none;
+}
+
+.catalog-list .catalog-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-list .catalog-item:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .pagination-list {
@@ -878,6 +1040,11 @@ a {
 
 .footer-navigation-offers a {
   color: #ffd180;
+}
+
+.footer-navigation-info,
+.footer-navigation-offers {
+  display: flex;
 }
 
 .footer-bottom {
