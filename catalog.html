@@ -165,11 +165,23 @@
               <h2 class="visually-hidden">Каталог товаров</h2>
               <div class="sorting">
                 <h3>Сортировка:</h3>
-                <a class="sorting-item sorting-item-active">По цене</a>
-                <a class="sorting-item" href="#">По типу</a>
-                <a class="sorting-item" href="#">По функционалу</a>
-                <a class="sorting-increase sorting-direction-active" href="#" aria-label="По увеличению"></a>
-                <a class="sorting-decrease" href="#" aria-label="По уменьшению"></a>
+                <ul class="sorting-list">
+                  <li>
+                    <a class="sorting-item sorting-item-active">По цене</a>
+                  </li>
+                  <li>
+                    <a class="sorting-item" href="#">По типу</a>
+                  </li>
+                  <li>
+                    <a class="sorting-item" href="#">По функционалу</a>
+                  </li>
+                  <li>
+                    <a class="sorting-increase sorting-direction-active" href="#" aria-label="По увеличению"></a>
+                  </li>
+                  <li>
+                    <a class="sorting-decrease" href="#" aria-label="По уменьшению"></a>
+                  </li>
+                </ul>
               </div>
               <ul class="catalog-list">
                 <li class="catalog-item">
@@ -279,17 +291,6 @@
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </div>
         </section>
-
-        <div class="popup-cart">
-          <div class="popup-cart-top">
-            <p>Товар добавлен в корзину!</p>
-          </div>
-          <div class="popup-cart-bottom">
-            <a class="button" href="#">Оформить заказ</a>
-            <button class="button button-shopping" type="button">Продолжить покупки</button>
-          </div>
-          <button class="popup-close" type="button" aria-label="Закрыть окно с сообщением"></button>
-        </div>
       </main>
 
       <footer class="main-footer">
@@ -337,4 +338,15 @@
         </div>
       </footer>
     </body>
+
+    <div class="popup-cart">
+      <div class="popup-cart-top">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="popup-cart-bottom">
+        <a class="button" href="#">Оформить заказ</a>
+        <button class="button button-shopping" type="button">Продолжить покупки</button>
+      </div>
+      <button class="popup-close" type="button" aria-label="Закрыть окно с сообщением"></button>
+    </div>
 </html>
