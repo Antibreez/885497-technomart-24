@@ -312,19 +312,19 @@
     </footer>
 
     <div class="popup-message">
-      <form action="#" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <div class="popup-message-top">
           <div class="popup-name">
             <label for="popup-name">Ваше имя:</label>
-            <input type="text" id="popup-name" name="popup-name" placeholder="Имя Фамилия">
+            <input type="text" id="popup-name" name="user-name" placeholder="Имя Фамилия">
           </div>
           <div class="popup-email">
             <label for="popup-email">Ваш e-mail:</label>
-            <input type="text" id="popup-email" name="popup-email" placeholder="email@example.com">
+            <input type="text" id="popup-email" name="email" placeholder="email@example.com">
           </div>
           <div class="popup-letter">
             <label for="popup-letter-field">Текст письма:</label>
-            <textarea id="popup-letter-field" name="popup-letter-field" placeholder="В свободной форме"></textarea>
+            <textarea id="popup-letter-field" name="letter" placeholder="В свободной форме"></textarea>
           </div>
         </div>
         <div class="popup-message-bottom">
@@ -334,9 +334,22 @@
       <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>
     </div>
 
-    <div class="popup-map popup-show">
+    <div class="popup-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7333652973907!2d30.317122696836705!3d59.939002207391205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551025056926" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button class="popup-close" type="button" aria-label="Закрыть окно отправки сообщения"></button>
     </div>
+
+    <div class="popup popup-cart">
+      <div class="popup-cart-top">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="popup-cart-bottom">
+        <a class="button" href="#">Оформить заказ</a>
+        <button class="button button-shopping" type="button">Продолжить покупки</button>
+      </div>
+      <button class="popup-close" type="button" aria-label="Закрыть окно с сообщением"></button>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

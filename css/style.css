@@ -684,10 +684,6 @@ input[type="radio"].visually-hidden {
   height: 266px;
 }
 
-.slide-show {
-  display: block;
-}
-
 .slide h3 {
   margin: 0;
   margin-bottom: 2px;
@@ -721,6 +717,10 @@ input[type="radio"].visually-hidden {
 .slide-perforators {
   background-image: url("../img/slide-perforators.jpg");
   background-repeat: no-repeat;
+}
+
+.slide-show {
+  display: block;
 }
 
 .popular-header {
@@ -1790,16 +1790,38 @@ input[type="radio"].visually-hidden {
 ================================================
 */
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .popup-message {
   position: fixed;
-  top: 330px;
+  top: 50%;
   left: 50%;
 
   display: none;
   width: 620px;
   height: 423px;
   margin-left: -310px;
-
+  margin-top: -215px;
   color: #000000;
 
   background-color: #ffffff;
@@ -1914,19 +1936,20 @@ input[type="radio"].visually-hidden {
 
 /*
 ================================================
-Стили модального окна на catalog.html
+Стили модального окна Купить
 ================================================
 */
 
 .popup-cart {
   position: fixed;
-  top: 330px;
+  top: 50%;
   left: 50%;
 
   display: none;
   width: 620px;
   height: 275px;
   margin-left: -310px;
+  margin-top: -141px;
 
   color: #000000;
 
@@ -2015,20 +2038,45 @@ input[type="radio"].visually-hidden {
 
 .popup-map {
   position: fixed;
-  top: 150px;
+  top: 50%;
   left: 50%;
 
   display: none;
   width: 940px;
   height: 447px;
   margin-left: -470px;
+  margin-top: -223px;
 
   background-color: #565656;
   box-shadow: 0px 0px 15px 1px rgba(47,41,42,0.5);
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .popup-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
 
 /*
