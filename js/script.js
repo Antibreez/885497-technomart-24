@@ -179,7 +179,7 @@ if (servicesBlock) {
               };
 
               evt.target.classList.add("services-item-active");
-              servicesDescriptions[j].classList.add("service-description-show");
+              servicesDescriptons[j].classList.add("service-description-show");
             };
           
         };
