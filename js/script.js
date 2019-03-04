@@ -115,6 +115,15 @@ if (popupMap) {
     evt.preventDefault();
     popupMap.classList.remove("popup-show");
   });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (popupMap.classList.contains("popup-show")) {
+        popupMap.classList.remove("popup-show");
+      };
+    };
+  });
 };
 
 /**
@@ -179,7 +188,7 @@ if (servicesBlock) {
               };
 
               evt.target.classList.add("services-item-active");
-              servicesDescriptons[j].classList.add("service-description-show");
+              servicesDescriptions[j].classList.add("service-description-show");
             };
           
         };
