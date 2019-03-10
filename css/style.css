@@ -49,6 +49,7 @@ a {
   display: inline-block;
   padding: 11px 20px 9px 20px;
 
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -144,18 +145,24 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top .header-logo {
-  padding: 13px 55px 7px;
+  padding: 12px 55px 7px;
 
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
           box-shadow: 0 5px 0 0 #b52933;
 }
 
+.header-top form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 220px;
+}
+
 .header-top input {
-  position: relative;
   width: 100%;
   height: 100%;
-  padding: 0 5px 0 48px;
+  padding: 0 5px 1px 48px;
 
   background-color: #293449;
   background-image: url("../img/icon-search-transparent.svg");
@@ -190,14 +197,6 @@ input[type="radio"].visually-hidden {
 
 .header-top input::placeholder {
   color: #ffffff;
-}
-
-.header-top form {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-width: 220px;
 }
 
 .header-top .header-bookmarks,
@@ -263,6 +262,13 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-search.svg");
 }
 
+.header-top input:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("../img/icon-search-red.svg");
+}
+
 .header-top .header-logo:hover {
   background-color: #ca2c37;
 
@@ -305,13 +311,6 @@ input[type="radio"].visually-hidden {
   background-color: #518534;
 }
 
-.header-top input:focus {
-  color: #000000;
-
-  background-color: #ffffff;
-  background-image: url("../img/icon-search-red.svg");
-}
-
 .header-middle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,8 +323,8 @@ input[type="radio"].visually-hidden {
 .header-slogan {
   width: 197px;
   margin: 0;
-  margin-left: 53px;
-  margin-top: 4px;
+  margin-left: 52px;
+  margin-top: 3px;
 
   font-size: 16px;
   line-height: 23px;
@@ -334,14 +333,14 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts {
-  margin-left: 70px;
+  margin-left: 71px;
 }
 
 .header-phone {
   position: relative;
   display: block;
   margin-bottom: 4px;
-  padding: 10px 52px 8px 70px;
+  padding: 9px 50px 9px 71px;
 
   font-size: 21px;
   line-height: 21px;
@@ -608,12 +607,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 300px;
-  padding: 21px 120px 22px 23px;
+  padding: 20px 120px 22px 23px;
 }
 
 .offers-item h3 {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   padding: 0;
 
   font-size: 24px;
@@ -627,6 +626,10 @@ input[type="radio"].visually-hidden {
   min-width: 135px;
 
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.offers-group-horizontal .button-offers {
+  margin-left: 2px;
 }
 
 .button-offers:hover {
@@ -680,7 +683,7 @@ input[type="radio"].visually-hidden {
 .slider-right-arrow {
   position: absolute;
   top: 50%;
-  margin-top: -20px;
+  margin-top: -19px;
 
   width: 22px;
   height: 40px;
@@ -772,11 +775,13 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-drills {
+  background-color: #584d47;
   background-image: url("../img/slide-drills.jpg");
   background-repeat: no-repeat;
 }
 
 .slide-perforators {
+  background-color: #584d47;
   background-image: url("../img/slide-perforators.jpg");
   background-repeat: no-repeat;
 }
@@ -1045,6 +1050,14 @@ input[type="radio"].visually-hidden {
   margin: auto;
 }
 
+.popular-brands-makita img {
+  margin-top: 50px;
+}
+
+.popular-brands-dewalt img {
+  margin-top: 48px;
+}
+
 .popular-brands-interskol img {
   margin-top: 21px;
 }
@@ -1249,6 +1262,7 @@ input[type="radio"].visually-hidden {
 .partners {
   margin: 0;
   padding: 0;
+  margin-bottom: 36px;
 
   font-size: 18px;
   line-height: 20px;
@@ -1256,7 +1270,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.partners li {
+.partners li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -1264,6 +1278,7 @@ input[type="radio"].visually-hidden {
   content: "";
   display: inline-block;
 
+  vertical-align: baseline;
   margin-right: 11px;
   margin-bottom: 4px;
   width: 25px;
@@ -1272,12 +1287,8 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
 }
 
-.partners li:last-child {
-  margin-bottom: 35px;
-}
-
 .about-company .button {
-  padding-left: 40px;
+  padding-left: 41px;
   padding-right: 40px;
 }
 
@@ -1504,6 +1515,10 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.range-slider:hover {
+  cursor: pointer;
+}
+
 .range-slider::before {
   content: "";
 
@@ -1640,7 +1655,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
 }
 
-.filters-brands-items input[type="checkbox"]:disabled ~ p {
+.filters-brands-items input[type="checkbox"]:disabled ~ .filters-name {
   opacity: 0.4;
 }
 
@@ -1685,6 +1700,14 @@ input[type="radio"].visually-hidden {
 
   background-color: #c5c5c5;
   border-radius: 50%;
+}
+
+.filters-power-items input[type="radio"]:disabled ~ .filters-name {
+  opacity: 0.4;
+}
+
+.filters-power-items input[type="radio"]:disabled + .radio-indicator {
+  opacity: 0.3;
 }
 
 .show-button {
@@ -1772,6 +1795,7 @@ input[type="radio"].visually-hidden {
   height: 0;
   margin-bottom: -1px;
 
+  vertical-align: middle;
   border: 6px solid transparent;
   border-bottom: 10px solid #c5c5c5;
   border-top-width: 0;
@@ -1783,6 +1807,7 @@ input[type="radio"].visually-hidden {
   height: 0;
   margin-bottom: -1px;
 
+  vertical-align: middle;
   border: 6px solid transparent;
   border-top: 10px solid #c5c5c5;
   border-bottom-width: 0;
@@ -2020,6 +2045,22 @@ input[type="radio"].visually-hidden {
 .popup-email input::-webkit-input-placeholder,
 .popup-letter textarea::-webkit-input-placeholder {
   color: #a9a9a9;
+}
+
+.popup-name input:-moz-placeholder,
+.popup-email input:-moz-placeholder,
+.popup-letter textarea:-moz-placeholder {
+  color: #a9a9a9;
+
+  opacity: 1;
+}
+
+.popup-name input::-moz-placeholder,
+.popup-email input::-moz-placeholder,
+.popup-letter textarea::-moz-placeholder {
+  color: #a9a9a9;
+
+  opacity: 1;
 }
 
 .popup-name input:-ms-input-placeholder,
@@ -2363,6 +2404,8 @@ input[type="radio"].visually-hidden {
 
 .footer-top-left p {
   margin-left: 4px;
+
+  x-ms-format-detection: none;
 }
 
 .footer-navigation-offers a {
@@ -2388,7 +2431,7 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation-info {
   width: 548px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 .footer-navigation-offers {
@@ -2434,7 +2477,7 @@ input[type="radio"].visually-hidden {
 .footer-bottom .footer-copyright {
   width: 240px;
   margin-left: 2px;
-  margin-right: 150px;
+  margin-right: 149px;
 }
 
 .footer-socials {
@@ -2443,6 +2486,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   margin-right: 120px;
+  margin-top: -2px;
   padding: 0;
 
   list-style: none;

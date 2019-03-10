@@ -117,12 +117,12 @@ if (popupMap) {
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (popupMap.classList.contains("popup-show")) {
-        popupMap.classList.remove("popup-show");
+    if (popupMap.classList.contains("popup-show")) {
+      evt.preventDefault();
+      if (evt.keyCode === 27) {
+          popupMap.classList.remove("popup-show");
       };
-    };
+    }
   });
 };
 
