@@ -2404,8 +2404,6 @@ input[type="radio"].visually-hidden {
 
 .footer-top-left p {
   margin-left: 4px;
-
-  x-ms-format-detection: none;
 }
 
 .footer-navigation-offers a {
