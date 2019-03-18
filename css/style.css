@@ -1578,7 +1578,6 @@ input[type="radio"].visually-hidden {
 .filters-price input {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
-  appearance: textfield;
 }
 
 .filters-brands legend,
