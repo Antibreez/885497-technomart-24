@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -16,7 +15,7 @@
             <img src="img/technomart-logo.svg" width="110" height="19" alt="Логотип магазина Техномарт">
           </a>
           <form>
-            <input type="search" name="search" id="search-field" placeholder="Поиск:">
+            <input type="search" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
           </form>
           <a class="header-bookmarks" href="#">Закладки: 0</a>
           <a class="header-cart header-cart-not-empty" href="#">Корзина: 10</a>
@@ -97,45 +96,34 @@
                       <li class="range-slider range-slider-right"></li>
                     </ul>
                   </div>
-                  <p><span>0</span>&mdash;<span>30000</span></p>
+                  <p>
+                    <input type="number" min="0" max="30000" step="500" name="lowest-price" aria-label="Минимальная цена" value="0">
+                    &mdash;
+                    <input type="number" min="0" max="30000" step="500" name="highest-price" aria-label="Максимальная цена" value="30000">
+                  </p>
                 </fieldset>
                 <fieldset class="filters-brands">
                   <legend>Производители:</legend>
                   <ul class="filters-brands-items">
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="checkbox" name="bosch" checked>
-                        <span class="checkbox-indicator"></span>
-                        <span class="filters-name">Bosch</span>
-                      </label>
+                      <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
+                      <label for="bosch">Bosch</label>
                     </li>
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="checkbox" name="interskol" disabled>
-                        <span class="checkbox-indicator"></span>
-                        <span class="filters-name">Интерскол</span>
-                      </label>
+                      <input class="visually-hidden" type="checkbox" name="interskol" id="interskol" disabled>
+                      <label for="interskol">Интерскол</label>
                     </li>
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="checkbox" name="makita" checked>
-                        <span class="checkbox-indicator"></span>
-                        <span class="filters-name">Makita</span>
-                      </label>
+                      <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
+                      <label for="makita">Makita</label>
                     </li>
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="checkbox" name="dewalt">
-                        <span class="checkbox-indicator"></span>
-                        <span class="filters-name">Dewalt</span>
-                      </label>
+                      <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt">
+                      <label for="dewalt">Dewalt</label>
                     </li>
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="checkbox" name="hitachi">
-                        <span class="checkbox-indicator"></span>
-                        <span class="filters-name">Hitachi</span>
-                      </label>
+                      <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi">
+                      <label for="hitachi">Hitachi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -143,18 +131,12 @@
                   <legend>Питание:</legend>
                   <ul class="filters-power-items">
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="radio" name="power-filter" checked>
-                        <span class="radio-indicator"></span>
-                        <span class="filters-name">Аккумуляторные</span>
-                      </label>
+                      <input class="visually-hidden" type="radio" name="power-filter" id="battery" checked>
+                      <label for="battery">Аккумуляторные</label>
                     </li>
                     <li>
-                      <label>
-                        <input class="visually-hidden" type="radio" name="power-filter">
-                        <span class="radio-indicator"></span>
-                        <span class="filters-name">Сетевые</span>
-                      </label>
+                      <input class="visually-hidden" type="radio" name="power-filter" id="wired" disabled checked>
+                      <label for="wired">Сетевые</label>
                     </li>
                   </ul>
                 </fieldset>
